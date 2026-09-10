@@ -1,0 +1,23 @@
+# AP, Variables practice
+
+name = input("What is your name?:") 
+number = input("Pick a number bewtween 1 and 10:")
+number2 = input("Pick number bewtween 100 and 1000:")
+breakfast = input("What did you have for breakfast?:")
+color = input("What is your favorite color?:")
+school = input("What is your schools name?:")      
+year = input("What year is it?:")
+eye = input("What is you eye color?:")
+age = input("What is someones age?:")
+subject = input("What is your favorite subject in school?")
+
+print(name)
+print(number)
+print(number2)
+print(breakfast)
+print(color)
+print(school)
+print(year)
+print(eye)
+print(age)
+print(subject) 
