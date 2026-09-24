@@ -5,6 +5,7 @@ uppercase = False
 lowercase = False
 number = False
 symbol = False
+password_strength = False
 password = input("What is your password:")
 
 (len(password))
@@ -31,3 +32,18 @@ elif score >= 3:
     print("Your password is medium")
 else:
     print("Your password is weak")
+
+if password_strength == "Strong":
+    print("Good job, your password is strong")
+else:
+    if len == False:
+        print("Make your password at least 8 characters long")
+    if uppercase == False:
+        print("Make your password have at least 1 uppercase letter")
+    if lowercase == False:
+        print("Make your password have at least 1 lowercase")
+    if number == False:
+        print("Make your password have at least 1 number")
+    if symbol == False:
+        print("Make your password have at least 1 symbol")
+    
