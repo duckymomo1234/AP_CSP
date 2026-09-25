@@ -1,0 +1,11 @@
+# AP, numbers guessing game
+
+import random
+
+print("Hello! Welcome to Alice's guessing game! You have six tries to guess a number 1-100. READY? SET? GO!")
+
+number = random.randint(1,101) 
+guess1 = input("What is your first guess?:")
+tries = 0 
+low = print("Too low!")
+high = print("Too high!")
