@@ -5,7 +5,29 @@ import random
 print("Hello! Welcome to Alice's guessing game! You have six tries to guess a number 1-100. READY? SET? GO!")
 
 number = random.randint(1,101) 
-guess1 = input("What is your first guess?:")
-tries = 0 
-low = print("Too low!")
-high = print("Too high!")
+guess1 = int(input("What is your first guess?:"))
+tries = 1
+
+if guess1 < number:
+  print("Too low!")
+elif guess1 > number:
+  print("Too high")
+else:
+  print("Correct)
+  break
+
+tries = 1
+
+while tries < 6:
+  guess = int(imput("What is you next guess"))
+
+if guess1 < number:
+  print("Too low!")
+elif guess1 > number:
+  print("Too high")
+else:
+  print("Correct)
+  break
+
+tries = tries + 1
+
