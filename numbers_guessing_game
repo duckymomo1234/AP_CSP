@@ -8,7 +8,97 @@ number = random.randint(1,100)
 tries = 0
 
 while tries < 6:
-  guess = int(imput("What is you next guess?:"))
+  guess = int(input("What is your next guess?:"))
+
+  if guess < number:
+    print("Too low")
+  elif guess > number:
+    print("Too high")
+  else:
+    print("Correct!")
+  break
+
+  tries = tries + 1
+
+  tries = 1
+
+while tries < 6:
+  guess = int(input("What is your next guess?:"))
+
+  if guess < number:
+    print("Too low")
+  elif guess > number:
+    print("Too high")
+  else:
+    print("Correct!")
+  break
+
+  tries = tries + 1
+
+  tries = 2
+
+while tries < 6:
+  guess = int(input("What is your next guess?:"))
+
+  if guess < number:
+    print("Too low")
+  elif guess > number:
+    print("Too high")
+  else:
+    print("Correct!")
+  break
+
+  tries = tries + 1
+
+  tries = 3
+
+while tries < 6:
+  guess = int(input("What is your next guess?:"))
+
+  if guess < number:
+    print("Too low")
+  elif guess > number:
+    print("Too high")
+  else:
+    print("Correct!")
+  break
+
+  tries = tries + 1
+
+  tries = 4
+
+while tries < 6:
+  guess = int(input("What is your next guess?:"))
+
+  if guess < number:
+    print("Too low")
+  elif guess > number:
+    print("Too high")
+  else:
+    print("Correct!")
+  break
+
+  tries = tries + 1
+
+  tries = 5
+
+while tries < 6:
+  guess = int(input("What is your next guess?:"))
+
+  if guess < number:
+    print("Too low")
+  elif guess > number:
+    print("Too high")
+  else:
+    print("Correct!")
+  break
+
+  tries = tries + 1
+
+  tries = 6
+
+while tries < 6:
+  guess = int(input("What is your next guess?:"))
 
   if guess < number:
     print("Too low")
