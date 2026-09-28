@@ -8,7 +8,7 @@ number = random.randint(1,100)
 tries = 0
 
 while tries < 6:
-  guess = int(imput("What is you next guess?:"))
+  guess = int(input("What is your guess guess?:"))
 
   if guess < number:
     print("Too low")
