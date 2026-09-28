@@ -8,7 +8,7 @@ number = random.randint(1,100)
 tries = 0
 
 while tries < 6:
-  guess = int(input("What is your guess guess?:"))
+  guess = int(input("What is your next guess?:"))
 
   if guess < number:
     print("Too low")
@@ -16,9 +16,6 @@ while tries < 6:
     print("Too high")
   else:
     print("Correct!")
-  break
+    break
 
   tries = tries + 1
-
-if tries == 6:
-  print("You're out of guesses! The number was", number)
