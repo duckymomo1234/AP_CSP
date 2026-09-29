@@ -9,7 +9,7 @@ tries = 0
 
 while tries < 6:
   guess = int(input("What is your next guess?:"))
-
+  
   if guess < number:
     print("Too low")
   elif guess > number:
@@ -19,3 +19,7 @@ while tries < 6:
     break
 
   tries = tries + 1
+
+  if tries == 6:
+    print("Your ran out fo tries! The number was", number)
+  
