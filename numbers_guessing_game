@@ -21,5 +21,5 @@ while tries < 6:
   tries = tries + 1
 
   if tries == 6:
-    print("Your ran out fo tries! The number was", number)  
+    print("Your ran out of tries! The number was", number)  
   
