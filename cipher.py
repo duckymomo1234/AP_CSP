@@ -23,19 +23,9 @@ suggested_output = input("Would you like to (E)ncrypt or (D)crypt a message?:")
 message = input("What is your message?:")
 shift = input("How many times would you like to shift?:")
 
-for character in message:
-    if letter.isalpha:
-        print(message)
-    elif letter.isnumeric:
-        print("Please enter a valid message")
+for letter in message:
+    if letter.isalpha():
+        letter = ord(letter)
+        letter = 
+
     
-        
-for num in range(1,25):
-    if num % 15 == 0:
-        print('FizzBuzz')
-    elif num % 3 == 0:
-        print("Fizz")
-    elif num % 5 == 0:
-        print("Buzz")
-    else:
-        print(num)
