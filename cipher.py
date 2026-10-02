@@ -23,9 +23,14 @@ suggested_output = input("Would you like to (E)ncrypt or (D)crypt a message?:")
 message = input("What is your message?:")
 shift = input("How many times would you like to shift?:")
 
+
 for letter in message:
     if letter.isalpha():
         letter = ord(letter)
-        letter = 
+        letter = letter + {shift}
+    if letter >= 122:
+        letter = letter -26
+        letter = chr(letter)
+        print("")
 
     
