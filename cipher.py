@@ -3,7 +3,7 @@
 #ENCRYPTING
 
 # Looking at sugested outputs
-# Start without finctions
+# Start without functions
 # Start with letter 1 and all 3 variables
 # Build a working loop tha twill pring out you ruser
 #build a conditional inside pf a loop tp see of specific leter is a characte, and if it convert to number, increase by whatever number your user gave you, convert it back to letter, print it 
@@ -24,13 +24,21 @@ message = input("What is your message?:")
 shift = input("How many times would you like to shift?:")
 
 
-for letter in message:
-    if letter.isalpha():
-        letter = ord(letter)
-        letter = letter + {shift}
-    if letter >= 122:
-        letter = letter -26
-        letter = chr(letter)
-        print("")
+
+def caesar_cipher(message, shift):
+    result = ""
+    for char in message:
+        if char.isalpha():
+            start = ord('A') if char.isupper() else ord('a')
+            result += chr((ord(char) - start + shift) % 26 + start)
+        else:
+            result += char
+    return result
+print(caesar_cipher(message, int(shift)))
+
+# Example usage:
+# message = "Hello, World!"
+# shift = 3
+# print(caesar_cipher(message, int(shift)))
 
     
