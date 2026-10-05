@@ -3,12 +3,8 @@
 # Create a list of ten words on a seperate text file !
 # Create another file hold win/loss counts !
 # Read the files
-with open("hangman.txt", "r") as file:
-    content = file.read()
 
-with open("win&lose_HM.txt", "r") as file:
-    content = file.read()
-# Use split(",") on the content of the words txt document to create your lost of words
+# Use split(",") on the content of the words txt document to create your lost of words !
 # Pull win  and lose totals from the other txt file you made save them as two seperate variables
 # Build the hangman game
     # Save the correct word as a varible random.choice(name of list)
@@ -22,7 +18,7 @@ __________
 |       /|\\
 |       / \\
 |
-|__________
+|__________ 
 '''
 
 
@@ -54,3 +50,20 @@ __________
     # INCREASE the lost count
     # ask if they want to play again
 
+import random
+
+word_contents = ""
+
+with open("hangman.txt", "r") as file:
+    word_content = file.read()
+
+word_list = word_contents.split("\n")
+
+random_word_index =  random.randint(0, len(word_list) - 1)
+word_to_guess = word_list[random_word_index]
+
+print(word_to_guess)
+
+with open("win&lose_HM.txt", "a") as file:
+        file.write("\nscore")
+    

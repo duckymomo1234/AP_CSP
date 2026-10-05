@@ -1,3 +1,4 @@
-# AP Strings notes
+s)
 
-# string => any saved inside of quotation marks " " ' '
+with open("win&lose_HM.txt", "a") as file:
+        file.write("\nscore")

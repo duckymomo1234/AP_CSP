@@ -1,1 +1,10 @@
-Thelist = ["apple", "banana", "obvious", "cherry", "water", "lunch", "sandwich", "cookie", "mouse", "cheese"]
+apple
+banana
+obvious
+cherry
+water
+lunch
+sandwich
+cookie
+mouse
+cheese
