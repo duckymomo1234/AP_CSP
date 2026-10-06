@@ -1,10 +1,13 @@
+# AP, Hangman 
+
+
 import random
 
 with open("hangman.txt", "r") as file:
     words = file.read().split("\n")
 
 try:
-    with open("win&lose_HM.txt", "r") as file:
+    with open("stats.txt", "r") as file:
         stats = file.read().split("\n")
         wins = int(stats[0])
         losses = int(stats[1])
